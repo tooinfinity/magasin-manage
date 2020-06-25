@@ -44,7 +44,12 @@ Widget _createDrawerHeader(){
     ),
     child: Stack(
       children: <Widget>[
-        Positioned(bottom: 12.0,left: 16.0,child: Text('Title Of Store',style: TextStyle(fontSize: 20.0,color: Colors.white,fontWeight:FontWeight.w500)),)
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
+          child: Center(child: Align(
+            alignment: FractionalOffset.bottomCenter,
+            child: Text('Title Of Store',style: TextStyle(fontSize: 20.0,color: Colors.white,fontWeight:FontWeight.w500))),),
+        )
       ],
     ),
     );
